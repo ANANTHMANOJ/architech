@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_margin="25dp"
+    android:id="@+id/listing"
+    >
+
+
+    <TextView
+        android:layout_width="190dp"
+        android:layout_height="100dp"
+        android:id="@+id/tool"
+        android:layout_alignParentLeft="true"
+        android:text="Tool_Name"
+        android:gravity="center"
+        android:textSize="35dp"
+        android:textColor="#000"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textAppearance="?android:textAppearanceLarge"/>
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="40dp"
+        android:id="@+id/graph"
+       android:layout_below="@id/tool"
+        android:gravity="center"
+        android:background="@drawable/graph"
+        />
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="40dp"
+        android:id="@+id/deletion"
+        android:layout_toRightOf="@id/graph"
+        android:layout_below="@id/tool"
+        android:gravity="center"
+        android:background="@drawable/deletion"
+        />
+
+    <Switch
+
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/status"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@id/tool"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/switch_toggle"
+        android:foreground="@drawable/switch_toggle"
+        android:gravity="center"
+       android:paddingLeft="16dp"
+        android:textAppearance="?android:textAppearanceMedium"/>
+
+    
+</RelativeLayout>
